@@ -13,7 +13,7 @@ function App() {
   const [initialdata, setInitialData] = useState({});
   const [loading, setLoading] = useState(true);
   const [searchArray, setSearchArray] = useState([]);
-  const [searchCity, setSearchCity] = useState([]);
+  // const [searchCity, setSearchCity] = useState([]);
   const [location, setLocation] = useState(true);
 
   // const options = {
@@ -100,7 +100,7 @@ function App() {
         `https://api.openweathermap.org/geo/1.0/direct?q=${e.target.value}&limit=10&appid=c0e338a36480ecce8e72b69694d1cee5`
       );
       console.log(response.data);
-      setSearchCity(response.data);
+      // setSearchCity(response.data);
       var result = await Promise.all(
         response.data.map(
           async (item) =>
@@ -109,7 +109,7 @@ function App() {
             )
         )
       );
-      setSearchCity(response.data);
+      // setSearchCity(response.data);
       setSearchArray(result);
       console.log(result);
       // setSearchArray(result);
@@ -119,12 +119,12 @@ function App() {
     }
   };
 
-  const getSearchArrayLocation = async (lat, lon) => {
-    const resp = await axios.get(
-      `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly,minutely&appid=c0e338a36480ecce8e72b69694d1cee5`
-    );
-    return resp.data;
-  };
+  // const getSearchArrayLocation = async (lat, lon) => {
+  //   const resp = await axios.get(
+  //     `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly,minutely&appid=c0e338a36480ecce8e72b69694d1cee5`
+  //   );
+  //   return resp.data;
+  // };
 
   useEffect(() => {
     getMyLocation();
