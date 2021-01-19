@@ -11,6 +11,44 @@
 .container {
   width: 100%;
   padding: 1.5rem;
+  position: relative;
+  
+  .searchArray{
+        position: absolute;
+        border-radius: 6px;
+        z-index: 11;
+        background-color: white;
+        width: 96%;
+        margin: 8px auto;
+        left: 50%;
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.3);
+    transform: translateX(-50%);
+    .search-item{
+          display: flex;
+          align-items: center;
+          margin: 4px 0;
+          border-bottom: 1px solid gray;
+          justify-content: space-between;
+          padding: 2px 18px;
+          .icon-box{
+            display: flex;
+            align-items: center;
+            width: 25%;
+            justify-content: space-between;
+            .searchTemp{
+              p{
+                font-size:10px;
+                &:first-child{
+                  font-weight: bold;
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+    &:last-child{
+      border-bottom: 0px solid gray;
+    }}
+  }
 
   .search {
     width: 100%;
@@ -59,8 +97,9 @@
     }
 
     .pressure {
-      width: 100%;
+      width: 70%;
       display: flex;
+      margin: auto;
 
       .box {
         margin: 3%;
@@ -68,6 +107,20 @@
         background-color: rgba(189, 236, 255, 0.363);
         text-align: center;
         padding: 4px 6px;
+      }
+
+    }
+    .suntime {
+      width: 100%;
+      display: flex;
+      margin: auto;
+
+
+      .box2 {
+        margin: 3%;
+        width: 44%;
+        text-align: center;
+        padding: 4px 2px;
       }
     }
   }
@@ -78,6 +131,7 @@
   // border: 2px solid red;
   display: flex;
   overflow: scroll;
+  justify-content: space-between;
 
   .daily-card {
     display: flex;
@@ -102,4 +156,14 @@
 
 .test {
   background-color: rgba(0, 183, 255, 0.363);
+}
+svg{
+  width: 100%;
+  height: 400px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .day-slider {
+    overflow: hidden;
+  }
 }
