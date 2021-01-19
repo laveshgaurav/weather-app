@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',
+    sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding: 1.5rem;
+
+  .search {
+    width: 100%;
+    display: flex;
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px 12px;
+    border-radius: 6px;
+
+    .fa {
+      font-size: 1.2rem;
+    }
+
+    input {
+      padding: 4px;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      border: none;
+      outline: none;
+      background-color: transparent;
+    }
+
+  }
+
+  .main-container {
+    width: 100%;
+    //  margin: 1.5rem 0;
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+
+    //  border: 2px solid blue;
+    .heading {
+      display: flex;
+      align-items: center;
+      padding: 6px 12px;
+
+      h1 {
+        margin-right: 12px;
+      }
+    }
+
+    .pressure {
+      width: 100%;
+      display: flex;
+
+      .box {
+        margin: 3%;
+        width: 44%;
+        background-color: rgba(189, 236, 255, 0.363);
+        text-align: center;
+        padding: 4px 6px;
+      }
+    }
+  }
+}
+
+.day-slider {
+  max-width: 100%;
+  // border: 2px solid red;
+  display: flex;
+  overflow: scroll;
+
+  .daily-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    // border: 2px solid blue;
+    align-items: center;
+    margin: 24px 8px;
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+  }
+
+}
+
+#canvasjs-react-chart-container-1 {
+  height: 200px !important;
+}
+
+#canvasjs-react-chart-container-0 {
+  height: 200px !important;
+}
+
+.test {
+  background-color: rgba(0, 183, 255, 0.363);
+}

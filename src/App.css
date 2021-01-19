@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 100%;
+  padding: 1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container .search {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 8px 12px;
+  border-radius: 6px;
 }
 
-.App-link {
-  color: #61dafb;
+.container .search .fa {
+  font-size: 1.2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container .search input {
+  padding: 4px;
+  border: none;
+  outline: none;
 }
+
+.container .search button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.container .main-container {
+  width: 100%;
+  -webkit-box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .main-container .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 12px;
+}
+
+.container .main-container .heading h1 {
+  margin-right: 12px;
+}
+
+.container .main-container .pressure {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .main-container .pressure .box {
+  margin: 3%;
+  width: 44%;
+  background-color: rgba(189, 236, 255, 0.363);
+  text-align: center;
+  padding: 4px 6px;
+}
+
+.day-slider {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+}
+
+.day-slider .daily-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 24px 8px;
+  -webkit-box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+
+#canvasjs-react-chart-container-1 {
+  height: 200px !important;
+}
+
+#canvasjs-react-chart-container-0 {
+  height: 200px !important;
+}
+
+.test {
+  background-color: rgba(0, 183, 255, 0.363);
+}
+/*# sourceMappingURL=App.css.map */
